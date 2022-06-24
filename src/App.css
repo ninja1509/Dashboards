@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: o;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar{
+  background-color: lightsalmon;
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+}
+
+.NavBar .logodiv{
+  flex: 20%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: left;
 }
 
-.App-link {
-  color: #61dafb;
+.NavBar .logodiv .logoimg{
+  width: 300px;
+  /* height: 200px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.NavBar .logodiv .logoimgMobile{
+  width: 80px;
+  display: none;
+  margin-left: 20px;
+}
+
+/* =========================== */
+
+
+
+.NavBar .rightBtnsDiv{
+  flex: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NavBar .rightBtnsDiv .links{
+  max-height: 100px;
+}
+
+.NavBar .rightBtnsDiv .links a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.NavBar .rightBtnsDiv button{
+  display: none;
+  margin-right: 20px;
+  height: fit-content;
+
+}
+
+.NavBar .rightBtnsDiv #hide{
+  display: flex;
+  
+}
+
+
+@media only screen and (max-width: 850px){
+  .NavBar .rightBtnsDiv .links a{
+  font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 750px){
+  .NavBar .rightBtnsDiv .links a{
+  font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .NavBar .rightBtnsDiv button{
+    display: flex;
+  }
+  
+  .NavBar .logodiv .logoimgMobile{
+  display: flex;
+  }
+
+  /* .NavBar .rightBtnsDiv .links a{
+    display: none;
+  } */
+
+  .NavBar .rightBtnsDiv #hide{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    height: 400px;
+    max-height: 300px;
+    width: 100%;
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NavBar .rightBtnsDiv #hide a{
+    margin: 20px;
+    font-size: 25px;
+
+  }
+
+  .NavBar .logodiv .logoimg{
+    display: none;
   }
 }
