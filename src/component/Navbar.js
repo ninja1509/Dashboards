@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../App.css';
+import './Navbar.css';
 import '../screens/Login';
 import logoBig from '../assets/Picture1.png';
 import logoMobile from '../assets/logo-final-spiral.png';

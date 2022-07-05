@@ -4,114 +4,481 @@
 }
 
 body{
-  margin: 0;
-  padding: o;
+  margin: 150px;
+  padding: 0px;
 }
 
-.NavBar{
-  background-color: lightsalmon;
-  width: 100%;
-  height: 100px;
+/* ======================================== */
+/* BLOCK 1 */
+
+.Block1{
+  /* border: solid; */
+  /* border-color: blue; */
+  background-color: #FBFBFF;
+
+}
+
+.Block1 .B1 {
+  padding: 150px;
   display: flex;
+  justify-content: center;
 }
 
-.NavBar .logodiv{
-  flex: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+/* BLOCK 1 TEXT LEFT*/
+.Block1 .B1 .B1Text{
+  /* border: solid; */
+  border-color: green;
+  justify-content: flex-start;
+  width: fit-content;
 }
 
-.NavBar .logodiv .logoimg{
-  width: 300px;
-  /* height: 200px; */
+.Block1 .B1 .B1Text h1{
+  font-size: 80px;
+  /* border: solid; */
+  width: 80%;
 }
 
-.NavBar .logodiv .logoimgMobile{
-  width: 80px;
-  display: none;
-  margin-left: 20px;
+.Block1 .B1 .B1Text p{
+  font-size: 30px;
+  /* border: solid; */
+  width: 80%;
 }
 
-/* =========================== */
+/* BLOCK 1 IMAGE*/
 
-
-
-.NavBar .rightBtnsDiv{
-  flex: 80%;
-  display: flex;
+.Block1 .B1 .B1Image{
+  /* border: solid; */
+  border-color: red;
   justify-content: flex-end;
+  width:fit-content;
 }
 
-.NavBar .rightBtnsDiv .links{
-  max-height: 100px;
+.Block1 .B1 .B1Image .b1img{
+  width: 500px
 }
 
-.NavBar .rightBtnsDiv .links a{
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-  margin-right: 15px;
+
+.Block1 .B1 button{
+  background-color: rgb(21, 21, 195);
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+  display: block;
 }
 
-.NavBar .rightBtnsDiv button{
-  display: none;
-  margin-right: 20px;
-  height: fit-content;
+/* BLOCK 1 END*/
+/* ======================================== */
 
+/* BLOCK 2 START*/
+
+.Block2{
+  /* border: solid; */
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 10px;
+  /* padding: 150px; */
+  display: list-item;
+  justify-content: center;
 }
 
-.NavBar .rightBtnsDiv #hide{
+.Block2 .B2{
+  /* border: solid; */
   display: flex;
-  
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
+.Block2 .B2p{
+  font-size: 40px;
+  /* border: solid; */
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 60px;
+}
 
-@media only screen and (max-width: 850px){
-  .NavBar .rightBtnsDiv .links a{
+.Block2 .B2 .B2Card{
+  /* border: solid; */
+  border-radius: 20px;
+  padding: 30px 36px;
+  width: 25%;
+  background-color: #FBFBFF;
+}
+
+.Block2 .B2 .B2Card .img{
+  width: 130px;
+}
+
+.Block2 .B2 .B2Card h2{
+  /* border: solid; */
+  padding-top: 20px;
+}
+
+.Block2 .B2 .B2Card p{
+  /* border: solid; */
   font-size: 20px;
-  }
 }
+/* BLOCK 2 END*/
+/* ======================================== */
+
+/* ========================================================== */
+                /* RESPONSIVE SCREEN STARTS HERE*/
+/* ========================================================== */
+                /* RESPONSIVE SCREEN STARTS HERE*/
+/* ========================================================== */
+@media only screen and (max-width: 850px){
+
+  /* ======================================== */
+                    /* BLOCK 1 */
+  .Block1 .B1 {
+    padding: 100px;
+    display:list-item;
+    justify-content: center;
+    /* border: solid; */
+  }
+
+
+  .Block1 .B1 .B1Text{
+    border-color: greenyellow;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 .B1Text p{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 .B1Text h1{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 button{
+    background-color: rgb(21, 21, 195);
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto ;
+    margin-bottom: 40px ;
+    display: block;
+  }
+
+  .Block1 .B1 .B1Image {
+    width: 100%;
+    display: block;
+    /* border: solid; */
+    border-color: red;
+  }
+  .Block1 .B1 .B1Image .b1img{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* border: solid; */
+  }
+
+                   /* BLOCK 1 END*/
+  /* ======================================== */
+
+  /* BLOCK 2 START*/
+
+.Block2{
+  /* border: solid; */
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 30px;
+  display: list-item;
+  justify-content: center;
+}
+
+.Block2 .B2{
+  /* border: solid; */
+  display: grid;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+
+.Block2 p{
+  font-size: 40px;
+  /* border: solid; */
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.Block2 .B2 .B2Card{
+  /* border: solid; */
+  border-radius: 20px;
+  padding: 30px 36px;
+  width: 80%;
+  background-color: #FBFBFF;
+  margin-top: 20px;
+}
+
+.Block2 .B2 .B2Card .img{
+  width: 130px;
+}
+
+.Block2 .B2 .B2Card h2{
+  /* border: solid; */
+  padding-top: 20px;
+}
+
+.Block2 .B2 .B2Card p{
+  /* border: solid; */
+  font-size: 20px;
+}
+/* BLOCK 2 END*/
+/* ======================================== */
+
+}
+
+/* ========================================================== */
 
 @media only screen and (max-width: 750px){
-  .NavBar .rightBtnsDiv .links a{
-  font-size: 15px;
-  }
-}
 
-@media only screen and (max-width: 650px){
-  .NavBar .rightBtnsDiv button{
-    display: flex;
+  /* ======================================== */
+                    /* BLOCK 1 */
+  .Block1 .B1 {
+    padding: 40px;
+    display:list-item;
+    justify-content: center;
+    /* border: solid; */
+  }
+
+
+  .Block1 .B1 .B1Text{
+    border-color: greenyellow;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 .B1Text p{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 .B1Text h1{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 button{
+    background-color: rgb(21, 21, 195);
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px ;
+    margin-bottom: 40px ;
+    display: block;
   }
   
-  .NavBar .logodiv .logoimgMobile{
-  display: flex;
-  }
-
-  /* .NavBar .rightBtnsDiv .links a{
-    display: none;
-  } */
-
-  .NavBar .rightBtnsDiv #hide{
-    position: absolute;
-    right: 0px;
-    top: 100px;
-    height: 400px;
-    max-height: 300px;
+  .Block1 .B1 .B1Image {
     width: 100%;
-    background-color: lightsalmon;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    /* border: solid; */
+    border-color: red;
+  }
+  .Block1 .B1 .B1Image .b1img{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* border: solid; */
   }
 
-  .NavBar .rightBtnsDiv #hide a{
-    margin: 20px;
-    font-size: 25px;
+                   /* BLOCK 1 END*/
+  /* ======================================== */
 
+    /* BLOCK 2 START*/
+
+.Block2{
+  /* border: solid; */
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 30px;
+  display: list-item;
+  justify-content: center;
+}
+
+.Block2 .B2{
+  /* border: solid; */
+  display: grid;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+
+.Block2 p{
+  font-size: 40px;
+  /* border: solid; */
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.Block2 .B2 .B2Card{
+  /* border: solid; */
+  border-radius: 20px;
+  padding: 30px 36px;
+  width: 80%;
+  background-color: #FBFBFF;
+  margin-top: 20px;
+}
+
+.Block2 .B2 .B2Card .img{
+  width: 130px;
+}
+
+.Block2 .B2 .B2Card h2{
+  /* border: solid; */
+  padding-top: 20px;
+}
+
+.Block2 .B2 .B2Card p{
+  /* border: solid; */
+  font-size: 20px;
+}
+/* BLOCK 2 END*/
+/* ======================================== */
+
+}
+
+/* ========================================================== */
+
+
+@media only screen and (max-width: 650px){
+
+  /* ======================================== */
+                    /* BLOCK 1 */
+  .Block1 .B1 {
+    padding: 30px;
+    display:list-item;
+    justify-content: center;
+    /* border: solid; */
   }
 
-  .NavBar .logodiv .logoimg{
-    display: none;
+
+  .Block1 .B1 .B1Text{
+    border-color: greenyellow;
+    /* border: solid; */
   }
+
+  .Block1 .B1 .B1Text p{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+  }
+
+  .Block1 .B1 .B1Text h1{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+  }  
+  
+  .Block1 .B1 button{
+    background-color: rgb(21, 21, 195);
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px ;
+    margin-bottom: 40px ;
+    display: block;
+  }
+
+  .Block1 .B1 .B1Image {
+    width: 100%;
+    display: block;
+    /* border: solid; */
+    border-color: red;
+  }
+  .Block1 .B1 .B1Image .b1img{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* border: solid; */
+  }
+
+                   /* BLOCK 1 END*/
+  /* ======================================== */
+
+    /* BLOCK 2 START*/
+
+.Block2{
+  /* border: solid; */
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 30px;
+  display: list-item;
+  /* justify-content: center; */
+}
+
+.Block2 .B2{
+  /* border: solid; */
+  display: grid;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+
+.Block2 p{
+  font-size: 40px;
+  /* border: solid; */
+  width: 100%;
+  padding-top: 20px;
+}
+
+.Block2 .B2 .B2Card{
+  /* border: solid; */
+  border-radius: 20px;
+  padding: 30px 36px;
+  width: 80%;
+  background-color: #FBFBFF;
+  margin-top: 20px;
+}
+
+.Block2 .B2 .B2Card .img{
+  width: 130px;
+}
+
+.Block2 .B2 .B2Card h2{
+  /* border: solid; */
+  padding-top: 20px;
+}
+
+.Block2 .B2 .B2Card p{
+  /* border: solid; */
+  font-size: 20px;
+}
+/* BLOCK 2 END*/
+/* ======================================== */
+
 }
